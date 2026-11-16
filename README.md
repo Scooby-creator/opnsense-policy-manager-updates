@@ -2,9 +2,9 @@
 
 Windows update distribution for OPNsense Policy Manager. Release assets only; application source is maintained separately.
 
-## تثبيت Windows 6.6.93
+## تثبيت Windows 6.6.94
 
-[تنزيل OPNsense-Setup-6.6.93.exe](https://github.com/Scooby-creator/opnsense-policy-manager-updates/releases/download/platform-6.6.93/OPNsense-Setup-6.6.93.exe) · [تفاصيل الإصدار](https://github.com/Scooby-creator/opnsense-policy-manager-updates/releases/tag/platform-6.6.93)
+[تنزيل OPNsense-Setup-6.6.94.exe](https://github.com/Scooby-creator/opnsense-policy-manager-updates/releases/download/platform-6.6.94/OPNsense-Setup-6.6.94.exe) · [تفاصيل الإصدار](https://github.com/Scooby-creator/opnsense-policy-manager-updates/releases/tag/platform-6.6.94)
 
 ملف تثبيت واحد ذاتي الاحتواء. اختر دور الجهاز: خادم رئيسي أو جهاز إدارة. يفحص النسخ الموجودة ويعرض خطة التثبيت، ويحافظ على الإعدادات، ثم يهيئ قناة التحديث داخل التطبيق. لا يتطلب Python أو .NET أو OpenSSH على جهاز المستخدم.
 
@@ -12,12 +12,12 @@ Windows update distribution for OPNsense Policy Manager. Release assets only; ap
 
 عند الحاجة لقراءة إعدادات محمية يظهر «استكمال الفحص». اضغطه ووافق على طلب Windows لإتمام القراءة فقط، ثم راجع خطة التثبيت ووافق عليها منفصلًا. إلغاء طلب الصلاحية لا يبدأ تثبيتًا.
 
-يحمل اسم الملف ورأس المثبّت رقم الإصدار نفسه. يعالج هذا الإصدار الرفض الخاطئ لأذونات ProgramData المعتادة وانقطاع نتيجة العامل بعد موافقة Windows، مع الحفاظ على حماية بيانات التشغيل.
+يحمل اسم الملف ورأس المثبّت رقم الإصدار نفسه. يوحّد هذا الإصدار فحص الصلاحيات في المثبّت ومحرك المنصة وWindows وBackend، مع التمييز بين المجلد والملف والحفاظ على حماية ملفات التشغيل.
 
 بصمة SHA256 للمثبّت:
 
 ```text
-2e8ba184d6a3554d1edd35c5c932b5c421b6dc46ff361778157efeb81294ed57
+a36f07b9d34bbed9aa52585b67f6f2725f6fd54cbc75743db0ed4d4b609d2c86
 ```
 
 بعد التهيئة افتح «تحديث المنصة». يمكن تنزيل الحزم الموقعة من الإنترنت أو فتح ملف ZIP واحد للتحديث دون الإنترنت. الفحص لا ينزّل أو يثبت تلقائيًا. توقيع حزم المنصة Ed25519 مستقل عن Windows Authenticode.
